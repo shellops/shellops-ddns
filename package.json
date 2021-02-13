@@ -1,0 +1,18 @@
+{
+  "name": "shellops-ddns",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/shellops/shellops-ddns"
+  },
+  "description": "Dynamic DNS to resolve 1-2-3-4.ip.shellops.link to 1.2.3.4",
+  "main": "app.js",
+  "bin": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Mohsen Esmaeili <m-esm@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "native-dns": "^0.7.0"
+  }
+}

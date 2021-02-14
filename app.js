@@ -8,7 +8,11 @@ server.on("request", function (request, response) {
     response.answer.push(
       dns.A({
         name: name,
-        address: name.split(".ip.")[0].replace(/-/g, "."),
+        address: name
+          .split(".ip.")[0]
+          .split(".")
+          .slice(-1)[0]
+          .replace(/-/g, "."),
         ttl: 600,
       })
     );
